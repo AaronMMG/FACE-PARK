@@ -1,13 +1,12 @@
 var url = window.location.href;
-var swLocation= '/PWA-2021/sw.js';
+var swLocation = '/FACE-PARK/sw.js';
 
 
-if (navigator.serviceWorker)
-{
-    if(url.includes('localhost'))
-        swLocation='/sw.js';
+if (navigator.serviceWorker) {
+    if (url.includes('localhost'))
+        swLocation = '/sw.js';
 
-        navigator.serviceWorker.register(swLocation);
+    navigator.serviceWorker.register(swLocation);
 }
 // Referencias de jQuery
 
